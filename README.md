@@ -21,3 +21,21 @@ classDiagram
         + get_badges() vector~string~
   }
 ```
+
+```mermaid
+classDiagram
+  ExampleParent <|-- ExampleChild
+  class ExampleParent{
+        - name: string
+        - email: string
+        - password: string
+        + login(user: string, pass: string) boolean
+        + get_email() string
+  }
+  class WordBank{
+        - badges vector~string~
+        + add_badge(title: string)
+        + get_badges() vector~string~
+  }
+
+```
