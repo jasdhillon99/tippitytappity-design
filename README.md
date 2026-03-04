@@ -23,4 +23,11 @@ class Score{
 
 WordBank --> Word : contains
 
+class Users{
+  string userID
+  float highScore
+  string[] historyScores
+
+}
+Users --> Score : contains
 ```
